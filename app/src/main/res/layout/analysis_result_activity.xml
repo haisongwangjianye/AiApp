@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <ImageView
+        android:id="@+id/image_org_picture"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:textColor="@color/bg_black"
+        android:background="@color/color2"
+        android:layout_below="@+id/image_org_picture"
+        android:gravity="center_vertical|left"
+        android:enabled="true"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:longClickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_take_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="查看回应报文" />
+        <!--Button
+            android:id="@+id/btn_take_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="请求识别" /-->
+
+        <Button
+            android:id="@+id/btn_YuyinBofang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="语音朗读" />
+
+    </LinearLayout>
+</RelativeLayout>
